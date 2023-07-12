@@ -1,10 +1,15 @@
 <?php
 session_start();
 
-if(isset($_POST["$item1"])){
-    echo 
-}
+if (isset($_POST["comprar"])){
 
+if(isset($_POST["item1"])){
+    $item1 = $_POST["item1"];
+   $_SESSION ["item1'"] = $item1;
+
+   echo $item1;
+}
+}
 ?>
 
 <!DOCTYPE html>
@@ -57,7 +62,7 @@ if(isset($_POST["$item1"])){
             <td><input type="number" id="valor1" name="valor1"></td>
             <td><input type="hidden" id="valor3" name="valor3">R$ 700,00</td>
         </tr>
-        <td><input type="submit" name="enviar" value="Comprar"></td>
+        <td><input type="submit" name="comprar" value="Comprar"></td>
         <tr>
 
         </tr>
