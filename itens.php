@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if(isset($_POST["$item1"])){
+    echo 
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,5 +63,6 @@
         </tr>
     </table>
     </form>
+
 </body>
 </html>
