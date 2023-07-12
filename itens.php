@@ -20,9 +20,49 @@ if(isset($_POST["item1"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Itens</title>
     <style>
-        table{
-            border: solid 2px black;
+
+        body{
+            font-family: 'Boogaloo', cursive;
+            text-align: center;
         }
+        table{
+            border: solid 2px #704214;
+            width: 800px;
+            border-radius: 10px;
+            margin-left: 400px;
+            margin-top: 50px;
+        }
+
+        th{
+            font-size: 20px;
+            color: #704214;
+            background-color: #e6aa77;
+            border-radius: 3px;
+        }
+        td{
+            color:#aa7444;
+        }
+        input{
+            border-radius: 5px;
+            border-color:  #704214;
+        }
+        .button{
+        background-color: #704214;
+        width: 100px;
+        height: 30px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        border: 1px solid #ffff;
+        border-radius: 15px;
+        color: #ffff;
+        font-size: 12px;
+        }
+
+        .button:hover{
+            background:rgb(38, 88, 45);
+            color: #ccffcc;
+        }
+ 
     </style>
 </head>
 <body>
@@ -62,7 +102,7 @@ if(isset($_POST["item1"])){
             <td><input type="number" id="valor1" name="valor1"></td>
             <td><input type="hidden" id="valor3" name="valor3">R$ 700,00</td>
         </tr>
-        <td><input type="submit" name="comprar" value="Comprar"></td>
+        <td><input type="submit" name="comprar" class="button" value="Comprar"></td>
         <tr>
 
         </tr>
